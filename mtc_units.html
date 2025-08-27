@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CERTIFIED NURSING ASSISTANT COURSE - Mountsview Technical College</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #1a75bc 0%, #0d47a1 100%);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .school-name {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+        
+        .program-name {
+            font-size: 1.5rem;
+            font-weight: 300;
+            margin-bottom: 1rem;
+        }
+        
+        .badge {
+            display: inline-block;
+            background-color: #ff6b00;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+        
+        .intro {
+            text-align: center;
+            padding: 2rem 0;
+            background-color: white;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+        
+        .intro p {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+            color: #555;
+        }
+        
+        .units-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            justify-content: center;
+            margin-bottom: 3rem;
+        }
+        
+        .unit-category {
+            flex: 1;
+            min-width: 350px;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease;
+        }
+        
+        .unit-category:hover {
+            transform: translateY(-5px);
+        }
+        
+        .category-header {
+            padding: 1.5rem;
+            color: white;
+            font-size: 1.4rem;
+            font-weight: 600;
+        }
+        
+        .core-nursing {
+            background: linear-gradient(135deg, #1a75bc 0%, #0d47a1 100%);
+        }
+        
+        .core-skills {
+            background: linear-gradient(135deg, #2a8d38 0%, #1b5e20 100%);
+        }
+        
+        .basic-skills {
+            background: linear-gradient(135deg, #9c27b0 0%, #6a1b9a 100%);
+        }
+        
+        .units-list {
+            padding: 1.5rem;
+        }
+        
+        .unit-item {
+            padding: 1rem;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            align-items: center;
+        }
+        
+        .unit-item:last-child {
+            border-bottom: none;
+        }
+        
+        .unit-number {
+            background-color: #f5f5f5;
+            color: #555;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+        
+        .unit-content {
+            flex: 1;
+        }
+        
+        .unit-title {
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: #333;
+        }
+        
+        .unit-details {
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+        
+        .footer-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .school-address {
+            margin: 1rem 0;
+            font-style: normal;
+        }
+        
+        .contact-info {
+            margin-top: 1rem;
+        }
+        
+        @media (max-width: 768px) {
+            .unit-category {
+                min-width: 100%;
+            }
+            
+            .school-name {
+                font-size: 2rem;
+            }
+            
+            .program-name {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="school-name">Mountsview Technical College</h1>
+            <p class="program-name">Certified Nursing Assistant Program</p>
+            <span class="badge">Accredited by TVETA</span>
+        </div>
+    </header>
+    
+    <section class="intro">
+        <div class="container">
+            <p>Mountsview Technical College, duly registered and licensed by the <strong>Technical and Vocational Education and Training Authority (TVETA)</strong>, offers this Certified Nursing Assistant (CNA) program. The program provides comprehensive training in patient care, medical knowledge, and essential healthcare skills, preparing graduates for national certification and professional excellence in healthcare service delivery.</p>
+        </div>
+    </section>
+    
+    <div class="container">
+        <div class="units-container">
+            <div class="unit-category">
+                <div class="category-header core-nursing">
+                    <i class="fas fa-heartbeat"></i> Core Nursing Skills
+                </div>
+                <div class="units-list">
+                    <div class="unit-item">
+                        <div class="unit-number">1</div>
+                        <div class="unit-content">
+                            <div class="unit-title">Introduction to CNA</div>
+                            <div class="unit-details">Foundations of Nursing Assistance</div>
+                        </div>
+                    </div>
+                    <div class="unit-item">
+                        <div class="unit-number">2</div>
+                        <div class="unit-content">
+                            <div class="unit-title">Providing Care</div>
+                            <div class="unit-details">Common Diseases, Providing Special Care, First Aid, HIV & AIDS</div>
+                        </div>
+                    </div>
+                    <div class="unit-item">
+                        <div class="unit-number">3</div>
+                        <div class="unit-content">
+                            <div class="unit-title">Promoting Safety</div>
+                            <div class="unit-details">Patient safety protocols and procedures</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="unit-category">
+                <div class="category-header core-skills">
+                    <i class="fas fa-brain"></i> Core Skills
+                </div>
+                <div class="units-list">
+                    <div class="unit-item">
+                        <div class="unit-number">4</div>
+                        <div class="unit-content">
+                            <div class="unit-title">Anatomy</div>
+                            <div class="unit-details">Human body structure and function</div>
+                        </div>
+                    </div
+                        <div class="unit-number">5</div>
+                        <div class="unit-content">
+                            <div class="unit-title">Pharmacology</div>
+                            <div class="unit-details">Medication administration basics</div>
+                        </div>
+                    </div>
+                    <div class="unit-item">
+                        <div class="unit-number">6</div>
+                        <div class="unit-content">
+                            <div class="unit-title">Health Facility Organization</div>
+                            <div class="unit-details">Healthcare systems and operations</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="unit-category">
+                <div class="category-header basic-skills">
+                    <i class="fas fa-laptop-medical"></i> Basic Skills
+                </div>
+                <div class="units-list">
+                    <div class="unit-item">
+                        <div class="unit-number">7</div>
+                        <div class="unit-content">
+                            <div class="unit-title">Communication Skills</div>
+                            <div class="unit-details">Patient and team interaction</div>
+                        </div>
+                    </div>
+                    <div class="unit-item">
+                        <div class="unit-number">8</div>
+                        <div class="unit-content">
+                            <div class="unit-title">Environmental Literacy</div>
+                            <div class="unit-details">Healthcare environment awareness</div>
+                        </div>
+                    </div>
+                    <div class="unit-item">
+                        <div class="unit-number">9</div>
+                        <div class="unit-content">
+                            <div class="unit-title">Digital Literacy</div>
+                            <div class="unit-details">Health technology fundamentals</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <h3>Mountsview Technical College</h3>
+                <p class="school-address">Naromoru, Opposite Main Stadium</p>
+                <p>Providing Quality Technical and Vocational Training under TVETA Guidelines</p>
+                <p class="contact-info">Phone: +254 715 365 500 | Email: mountsviewvocational2023@gmail.com</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
