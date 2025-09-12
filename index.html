@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CERTIFIED NURSING ASSISTANT COURSE - Mountsview Technical College</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Strategic Plan - Mountsview Vocational & Technical Training Institute</title>
     <style>
         * {
             margin: 0;
@@ -14,299 +13,313 @@
         }
         
         body {
-            background-color: #f8f9fa;
+            background-color: #f5f7f9;
             color: #333;
             line-height: 1.6;
+            padding: 20px;
         }
         
         .container {
-            max-width: 1200px;
+            max-width: 1000px;
             margin: 0 auto;
-            padding: 0 20px;
+            background: white;
+            padding: 30px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
         }
         
         header {
-            background: linear-gradient(135deg, #1a75bc 0%, #0d47a1 100%);
-            color: white;
-            padding: 2rem 0;
             text-align: center;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #2c3e50;
         }
         
-        .school-name {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-            font-weight: 700;
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 28px;
         }
         
-        .program-name {
-            font-size: 1.5rem;
-            font-weight: 300;
-            margin-bottom: 1rem;
+        h2 {
+            color: #3498db;
+            margin: 25px 0 15px 0;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #eaeaea;
         }
         
-        .badge {
-            display: inline-block;
-            background-color: #ff6b00;
-            color: white;
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            font-weight: 600;
+        h3 {
+            color: #2c3e50;
+            margin: 20px 0 10px 0;
         }
         
-        .intro {
-            text-align: center;
-            padding: 2rem 0;
-            background-color: white;
-            margin-bottom: 2rem;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        p {
+            margin-bottom: 15px;
         }
         
-        .intro p {
-            max-width: 800px;
-            margin: 0 auto;
-            font-size: 1.1rem;
-            color: #555;
+        ul {
+            margin-left: 20px;
+            margin-bottom: 20px;
         }
         
-        .units-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 25px;
-            justify-content: center;
-            margin-bottom: 3rem;
+        li {
+            margin-bottom: 8px;
         }
         
-        .unit-category {
-            flex: 1;
-            min-width: 350px;
-            background: white;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-            transition: transform 0.3s ease;
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
         }
         
-        .unit-category:hover {
-            transform: translateY(-5px);
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
         }
         
-        .category-header {
-            padding: 1.5rem;
-            color: white;
-            font-size: 1.4rem;
-            font-weight: 600;
+        th {
+            background-color: #f2f2f2;
+            color: #2c3e50;
         }
         
-        .core-nursing {
-            background: linear-gradient(135deg, #1a75bc 0%, #0d47a1 100%);
+        .signature-block {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
         }
         
-        .core-skills {
-            background: linear-gradient(135deg, #2a8d38 0%, #1b5e20 100%);
-        }
-        
-        .basic-skills {
-            background: linear-gradient(135deg, #9c27b0 0%, #6a1b9a 100%);
-        }
-        
-        .units-list {
-            padding: 1.5rem;
-        }
-        
-        .unit-item {
-            padding: 1rem;
-            border-bottom: 1px solid #eee;
-            display: flex;
-            align-items: center;
-        }
-        
-        .unit-item:last-child {
-            border-bottom: none;
-        }
-        
-        .unit-number {
-            background-color: #f5f5f5;
-            color: #555;
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-right: 15px;
-            font-weight: bold;
-            font-size: 0.9rem;
-        }
-        
-        .unit-content {
-            flex: 1;
-        }
-        
-        .unit-title {
-            font-weight: 600;
+        .signature-line {
+            margin-top: 60px;
+            width: 300px;
+            border-bottom: 1px solid #333;
             margin-bottom: 5px;
-            color: #333;
         }
         
-        .unit-details {
-            font-size: 0.9rem;
-            color: #666;
+        .kpi-table {
+            font-size: 14px;
         }
         
-        footer {
+        .kpi-table th {
             background-color: #2c3e50;
             color: white;
-            text-align: center;
-            padding: 2rem 0;
-            margin-top: 2rem;
         }
         
-        .footer-content {
-            max-width: 800px;
-            margin: 0 auto;
+        .page-break {
+            page-break-before: always;
         }
         
-        .school-address {
-            margin: 1rem 0;
-            font-style: normal;
-        }
-        
-        .contact-info {
-            margin-top: 1rem;
-        }
-        
-        @media (max-width: 768px) {
-            .unit-category {
-                min-width: 100%;
+        @media print {
+            body {
+                background: white;
+                padding: 0;
             }
             
-            .school-name {
-                font-size: 2rem;
+            .container {
+                box-shadow: none;
+                padding: 0;
             }
             
-            .program-name {
-                font-size: 1.2rem;
+            .page-break {
+                padding-top: 40px;
             }
         }
     </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1 class="school-name">Mountsview Technical College</h1>
-            <p class="program-name">Certified Nursing Assistant Program</p>
-            <span class="badge">Accredited by TVETA</span>
-        </div>
-    </header>
-    
-    <section class="intro">
-        <div class="container">
-            <p>Mountsview Technical College, duly registered and licensed by the <strong>Technical and Vocational Education and Training Authority (TVETA)</strong>, offers this Certified Nursing Assistant (CNA) program. The program provides comprehensive training in patient care, medical knowledge, and essential healthcare skills, preparing graduates for national certification and professional excellence in healthcare service delivery.</p>
-        </div>
-    </section>
-    
     <div class="container">
-        <div class="units-container">
-            <div class="unit-category">
-                <div class="category-header core-nursing">
-                    <i class="fas fa-heartbeat"></i> Core Nursing Skills
-                </div>
-                <div class="units-list">
-                    <div class="unit-item">
-                        <div class="unit-number">1</div>
-                        <div class="unit-content">
-                            <div class="unit-title">Introduction to CNA</div>
-                            <div class="unit-details">Foundations of Nursing Assistance</div>
-                        </div>
-                    </div>
-                    <div class="unit-item">
-                        <div class="unit-number">2</div>
-                        <div class="unit-content">
-                            <div class="unit-title">Providing Care</div>
-                            <div class="unit-details">First Aid/Promoting Safety, HIV & AIDS</div>
-                        </div>
-                    </div>
-                    <div class="unit-item">
-                        <div class="unit-number">3</div>
-                        <div class="unit-content">
-                            <div class="unit-title">Providing Special Care</div>
-                            <div class="unit-details">Common Diseases and Special Care Procedures</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <header>
+            <h1>Mountsview Vocational & Technical Training Institute</h1>
+            <h2>Five-Year Strategic Plan (2024–2028)</h2>
+            <p>"Building a Legacy of Excellence in Skills Training"</p>
+        </header>
+
+        <section>
+            <h2>Table of Contents</h2>
+            <ul>
+                <li>1. Executive Summary</li>
+                <li>2. Institutional Background</li>
+                <li>3. Situational Analysis</li>
+                <li>4. Vision, Mission, Core Values & Philosophy</li>
+                <li>5. Strategic Objectives, Outcomes, and Strategies</li>
+                <li>6. Implementation Framework</li>
+                <li>7. Monitoring, Evaluation and Learning (MEL) Framework</li>
+                <li>8. Risk Management Plan</li>
+                <li>9. Resource Mobilization and Financial Sustainability Plan</li>
+                <li>10. Conclusion & Signatures</li>
+            </ul>
+        </section>
+
+        <div class="page-break">
+            <h2>1. Executive Summary</h2>
+            <p>This Strategic Plan outlines the roadmap for Mountsview Vocational & Technical Training Institute for the period 2024 to 2028. It is a product of extensive introspection and analysis of the internal and external operating environment. The plan is designed to transform the institute into a centre of excellence in vocational and technical training, renowned for producing competent, ethical, and industry-ready graduates.</p>
             
-            <div class="unit-category">
-                <div class="category-header core-skills">
-                    <i class="fas fa-brain"></i> Core Skills
-                </div>
-                <div class="units-list">
-                    <div class="unit-item">
-                        <div class="unit-number">4</div>
-                        <div class="unit-content">
-                            <div class="unit-title">Anatomy</div>
-                            <div class="unit-details">Human body structure and function</div>
-                        </div>
-                    </div>
-                    <div class="unit-item">
-                        <div class="unit-number">5</div>
-                        <div class="unit-content">
-                            <div class="unit-title">Pharmacology</div>
-                            <div class="unit-details">Medication administration basics</div>
-                        </div>
-                    </div>
-                    <div class="unit-item">
-                        <div class="unit-number">6</div>
-                        <div class="unit-content">
-                            <div class="unit-title">Health Facility Organization</div>
-                            <div class="unit-details">Healthcare systems and operations</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <p>The plan is anchored on seven (7) strategic pillars:</p>
+            <ol>
+                <li>Academic Excellence & Program Innovation</li>
+                <li>Infrastructure & ICT Development</li>
+                <li>Student Welfare, Placement & Alumni Engagement</li>
+                <li>Strategic Partnerships & Industry Linkages</li>
+                <li>Good Governance & Institutional Capacity Building</li>
+                <li>Financial Sustainability & Resource Mobilization</li>
+                <li>Brand Visibility & Market Positioning</li>
+            </ol>
             
-            <div class="unit-category">
-                <div class="category-header basic-skills">
-                    <i class="fas fa-laptop-medical"></i> Basic Skills
-                </div>
-                <div class="units-list">
-                    <div class="unit-item">
-                        <div class="unit-number">7</div>
-                        <div class="unit-content">
-                            <div class="unit-title">Communication Skills</div>
-                            <div class="unit-details">Patient and team interaction</div>
-                        </div>
-                    </div>
-                    <div class="unit-item">
-                        <div class="unit-number">8</div>
-                        <div class="unit-content">
-                            <div class="unit-title">Environmental Literacy</div>
-                            <div class="unit-details">Healthcare environment awareness</div>
-                        </div>
-                    </div>
-                    <div class="unit-item">
-                        <div class="unit-number">9</div>
-                        <div class="unit-content">
-                            <div class="unit-title">Digital Literacy</div>
-                            <div class="unit-details">Health technology fundamentals</div>
-                        </div>
-                    </div>
-                </div>
+            <p>This document serves as a blueprint for management, staff, students, and stakeholders, guiding all institutional activities and investments over the next five years. It is aligned with the Kenya Vision 2030, the TVET Act (2013), and the Sustainable Development Goals (SDGs), particularly SDG 4 on Quality Education and SDG 8 on Decent Work and Economic Growth.</p>
+        </div>
+
+        <div class="page-break">
+            <h2>2. Institutional Background</h2>
+            
+            <h3>2.1 History and Mandate</h3>
+            <p>Mountsview Vocational & Technical Training Institute was established to address the critical skills gap in the Kenyan economy, particularly in the healthcare and technical sectors. Located in Naromoru, Nyeri County, the institute is registered by the Technical and Vocational Education and Training Authority (TVETA) and offers courses examined by TVET CDACC.</p>
+            
+            <p><strong>Core Mandate:</strong> To provide quality, accessible, and affordable vocational training that equips trainees with practical skills, knowledge, and positive attitudes for self-employment, wage employment, and lifelong learning.</p>
+            
+            <h3>2.2 Governance and Management Structure</h3>
+            <p>The institute operates under the guidance of a Board of Directors (BOD) which provides strategic oversight. The day-to-day management is led by the Director, supported by a Principal (Academics), Manager (Administration & Finance), and Manager (Marketing & Linkages). Academic programs are run by Heads of Departments (HODs) for various disciplines.</p>
+        </div>
+
+        <div class="page-break">
+            <h2>3. Situational Analysis</h2>
+            
+            <h3>3.1 SWOT Analysis</h3>
+            <table>
+                <tr>
+                    <th>STRENGTHS</th>
+                    <th>WEAKNESSES</th>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>Qualified and TVET-certified trainers</li>
+                            <li>Strong, practical curriculum in high-demand fields</li>
+                            <li>Supportive and experienced Board of Directors</li>
+                            <li>Growing positive reputation in the local community</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Inadequate and ageing workshop/lab equipment</li>
+                            <li>Limited physical space for expansion</li>
+                            <li>Under-developed e-learning and ICT infrastructure</li>
+                            <li>Over-reliance on tuition fees as the main source of income</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>OPPORTUNITIES</th>
+                    <th>THREATS</th>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>High government and donor focus on supporting TVET</li>
+                            <li>Growing demand for skilled healthcare and technical workers</li>
+                            <li>Potential for partnerships with industries, NGOs, and hospitals</li>
+                            <li>Untapped market for short courses and evening programs</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Increasing competition from other TVET institutions</li>
+                            <li>Rapidly changing technology requiring constant upgrades</li>
+                            <li>Economic downturns affecting students' ability to pay fees</li>
+                            <li>Stringent regulatory requirements from TVETA</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+            
+            <h3>3.2 PESTLE Analysis</h3>
+            <ul>
+                <li><strong>Political:</strong> Supportive government policies under the Bottom-Up Economic Transformation Agenda (BETA) that prioritizes TVET and youth empowerment.</li>
+                <li><strong>Economic:</strong> High youth unemployment creates demand for employable skills; however, low disposable income affects fee payment ability.</li>
+                <li><strong>Social:</strong> A societal shift in perception, recognizing TVET as a viable path to successful careers.</li>
+                <li><strong>Technological:</strong> Digital transformation offers opportunities for blended learning but requires significant investment.</li>
+                <li><strong>Legal:</strong> Must comply with TVET Act 2013, TVET Regulations 2015, OSHA 2007, WIBA 2007, and data protection laws.</li>
+                <li><strong>Environmental:</strong> Need to incorporate green skills and sustainable practices into curricula and operations.</li>
+            </ul>
+        </div>
+
+        <div class="page-break">
+            <h2>4. Vision, Mission, Core Values & Philosophy</h2>
+            
+            <ul>
+                <li><strong>Our Vision:</strong> To be the preferred centre of excellence in vocational and technical training, producing globally competitive and socially responsible artisans and professionals.</li>
+                <li><strong>Our Mission:</strong> To provide innovative, industry-driven, and inclusive skills training through qualified facilitators, modern infrastructure, and strategic partnerships, thereby enhancing employability and entrepreneurship.</li>
+                <li><strong>Our Core Values:</strong> Integrity, Excellence, Innovation, Teamwork, Inclusivity (I.E.I.T.I)</li>
+                <li><strong>Our Philosophy:</strong> "Skill for Empowerment and Sustainable Development."</li>
+            </ul>
+        </div>
+
+        <div class="page-break">
+            <h2>5. Strategic Objectives, Outcomes, and Strategies</h2>
+            
+            <table class="kpi-table">
+                <tr>
+                    <th>Pillar & Strategic Objective</th>
+                    <th>Key Strategies</th>
+                    <th>Key Performance Indicators (KPIs)</th>
+                </tr>
+                <tr>
+                    <td><strong>1. Academic Excellence & Innovation</strong><br>1.1. Enhance the quality and relevance of training programs.</td>
+                    <td>
+                        <ul>
+                            <li>Review and align all curricula with KNQF and industry needs annually</li>
+                            <li>Accredit 3 new high-demand courses by 2025</li>
+                            <li>Ensure 100% of trainers are TVET-pedagogy certified by 2025</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>% of courses with updated curricula</li>
+                            <li>Number of new accredited courses</li>
+                            <li>Trainer certification rate</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1.2. Improve teaching, learning, and assessment methods.</td>
+                    <td>
+                        <ul>
+                            <li>Establish a Digital Resource Centre</li>
+                            <li>Integrate CBT and project-based learning</li>
+                            <li>Conduct quarterly internal moderation of assessments</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Student pass rate (Target: >85%)</li>
+                            <li>Number of trainers using digital tools</li>
+                        </ul>
+                    </td>
+                </tr>
+                <!-- Additional rows would follow the same pattern -->
+            </table>
+            
+            <p><em>Note: The complete table with all strategic objectives would be included in the full document.</em></p>
+        </div>
+
+        <div class="page-break">
+            <h2>10. Conclusion & Signatures</h2>
+            
+            <p>This Strategic Plan 2024–2028 provides a clear and ambitious yet realistic path for Mountsview Vocational & Technical Training Institute. Its successful implementation requires the unwavering commitment of the Board, Management, Staff, Students, and Partners. We collectively commit to realizing this vision and transforming lives through skills development.</p>
+            
+            <div class="signature-block">
+                <p><strong>Approved by:</strong></p>
+                
+                <div class="signature-line"></div>
+                <p>Chairperson, Board of Directors</p>
+                <p>Date: _______________</p>
+                
+                <div style="margin-top: 40px;"></div>
+                
+                <div class="signature-line"></div>
+                <p>Director, Mountsview Vocational & Technical Training Institute</p>
+                <p>Date: _______________</p>
             </div>
         </div>
     </div>
-    
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <h3>Mountsview Technical College</h3>
-                <p class="school-address">Naromoru, Opposite Main Stadium</p>
-                <p>Providing Quality Technical and Vocational Training under TVETA Guidelines</p>
-                <p class="contact-info">Phone: +254 715 365 500 | Email: mountsviewvocational2023@gmail.com</p>
-            </div>
-        </div>
-    </footer>
 </body>
 </html>
