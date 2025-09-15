@@ -3,708 +3,321 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Strategic Plan - Mountsview Vocational & Technical Training Institute</title>
+    <title>Academic & Assessment Policy | Mountsview</title>
     <style>
+        :root {
+            --color-primary: #2c3e50;
+            --color-secondary: #3498db;
+            --color-accent: #2980b9;
+            --color-light: #ecf0f1;
+            --color-dark: #2c3e50;
+            --color-success: #27ae60;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --border-radius: 8px;
+        }
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-        
+
         body {
-            background-color: #f5f7f9;
-            color: #333;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
             padding: 20px;
         }
-        
-        .container {
+
+        .policy-container {
             max-width: 1000px;
-            margin: 0 auto;
+            margin: 20px auto;
             background: white;
-            padding: 30px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
+            padding: 2.5rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
         }
-        
-        header {
+
+        .policy-header {
             text-align: center;
-            margin-bottom: 30px;
-            padding-bottom: 20px;
-            border-bottom: 2px solid #2c3e50;
+            margin-bottom: 2.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 2px solid var(--color-secondary);
         }
-        
-        h1 {
-            color: #2c3e50;
-            margin-bottom: 10px;
-            font-size: 28px;
+
+        .institute-name {
+            color: var(--color-primary);
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
         }
-        
+
+        .policy-title {
+            color: var(--color-dark);
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin: 1rem 0;
+            text-align: center;
+        }
+
+        .policy-subtitle {
+            color: var(--color-secondary);
+            font-size: 1.1rem;
+            margin-top: 0.5rem;
+        }
+
+        section {
+            margin-bottom: 2.5rem;
+        }
+
         h2 {
-            color: #3498db;
-            margin: 25px 0 15px 0;
-            padding-bottom: 8px;
-            border-bottom: 1px solid #eaeaea;
+            color: var(--color-primary);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.2rem;
+            border-bottom: 1px solid var(--color-light);
         }
-        
+
         h3 {
-            color: #2c3e50;
-            margin: 20px 0 10px 0;
+            color: var(--color-secondary);
+            margin: 1.5rem 0 0.8rem 0;
         }
-        
-        p {
-            margin-bottom: 15px;
+
+        p, ul {
+            margin-bottom: 1.2rem;
         }
-        
+
         ul {
-            margin-left: 20px;
-            margin-bottom: 20px;
+            list-style-position: outside;
+            padding-left: 1.5rem;
         }
-        
+
         li {
-            margin-bottom: 8px;
+            margin-bottom: 0.6rem;
         }
-        
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
+
+        .note-box {
+            background-color: #e8f4fc;
+            padding: 1rem 1.5rem;
+            border-radius: var(--border-radius);
+            border-left: 4px solid var(--color-secondary);
+            margin: 1.5rem 0;
         }
-        
-        th, td {
+
+        .assessment-types {
+            background-color: #f8f9fa;
+            padding: 1.8rem;
+            border-radius: var(--border-radius);
             border: 1px solid #ddd;
-            padding: 12px;
+        }
+
+        .type {
+            margin-bottom: 1.8rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px dashed #ccc;
+        }
+
+        .type:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+        .approval-section {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 2px dashed #ccc;
             text-align: left;
         }
-        
-        th {
-            background-color: #f2f2f2;
-            color: #2c3e50;
+
+        .signature-area {
+            margin-top: 2rem;
         }
-        
-        .signature-block {
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid #ddd;
-        }
-        
+
         .signature-line {
-            margin-top: 60px;
+            display: inline-block;
             width: 300px;
-            border-bottom: 1px solid #333;
+            margin-top: 3rem;
+            border-top: 1px solid #000;
+            text-align: center;
+            padding-top: 5px;
+            font-style: italic;
+            color: var(--color-dark);
+        }
+
+        .manager-name {
+            font-weight: bold;
+            margin-top: 0.5rem;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 2rem;
+            color: #7f8c8d;
+            font-size: 0.9rem;
+        }
+
+        .policy-goal {
+            background-color: var(--color-light);
+            padding: 1.5rem;
+            border-radius: var(--border-radius);
+            margin: 1.5rem 0;
+            font-style: italic;
+            text-align: center;
+        }
+        
+        .signature-space {
+            margin-top: 10px;
             margin-bottom: 5px;
         }
         
-        .kpi-table {
-            font-size: 14px;
-        }
-        
-        .kpi-table th {
-            background-color: #2c3e50;
-            color: white;
-        }
-        
-        .page-break {
-            page-break-before: always;
-        }
-        
-        .swot-table th {
-            background-color: #2c3e50;
-            color: white;
-            text-align: center;
-        }
-        
-        .risk-table {
-            font-size: 14px;
-        }
-        
-        .risk-table th {
-            background-color: #2c3e50;
-            color: white;
-            text-align: center;
-        }
-        
-        @media print {
-            body {
-                background: white;
-                padding: 0;
-            }
-            
-            .container {
-                box-shadow: none;
-                padding: 0;
-            }
-            
-            .page-break {
-                padding-top: 40px;
-            }
+        .date-field {
+            margin-top: 15px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Mountsview Vocational & Technical Training Institute</h1>
-            <h2>Five-Year Strategic Plan (2024–2028)</h2>
-            <p>"Building a Legacy of Excellence in Skills Training"</p>
+
+    <div class="policy-container">
+
+        <header class="policy-header">
+            <h1 class="institute-name">Mountsview Vocational and Technical Training Institute</h1>
+            <h2 class="policy-title">Academic and Assessment Policy</h2>
+            <p class="policy-subtitle">Ensuring Quality Education Through Effective Assessment Practices</p>
         </header>
 
-        <section>
-            <h2>Table of Contents</h2>
+        <div class="policy-goal">
+            <p>This policy establishes the framework for all academic assessment activities at Mountsview, ensuring they are valid, reliable, fair, and transparent while meeting all regulatory requirements.</p>
+        </div>
+
+        <section id="preamble">
+            <h2>1.0 Preamble</h2>
+            <p>Mountsview Vocational and Technical Training Institute is committed to providing quality competency-based education and training (CBET) that meets the standards set by the Technical and Vocational Education and Training Authority (TVETA) and the Curriculum Development, Assessment and Certification Council (CDACC). This policy establishes a framework for competency-based assessment to ensure it is fair, valid, reliable, authentic, and consistent. It applies to all trainees, trainers, assessors, and internal verifiers involved in the assessment process.</p>
+            <p>The Institute recognizes that effective assessment is integral to the learning process and essential for certifying that trainees have achieved the required competencies for their chosen qualifications. This policy should be read in conjunction with the Institute's Teaching and Learning Policy, Quality Assurance Policy, and Examination Regulations.</p>
+        </section>
+
+        <section id="objectives">
+            <h2>2.0 Policy Objectives</h2>
             <ul>
-                <li>1. Executive Summary</li>
-                <li>2. Institutional Background</li>
-                <li>3. Situational Analysis</li>
-                <li>4. Vision, Mission, Core Values & Philosophy</li>
-                <li>5. Strategic Objectives, Outcomes, and Strategies</li>
-                <li>6. Implementation Framework</li>
-                <li>7. Monitoring, Evaluation and Learning (MEL) Framework</li>
-                <li>8. Risk Management Plan</li>
-                <li>9. Resource Mobilization and Financial Sustainability Plan</li>
-                <li>10. Conclusion & Signatures</li>
+                <li>To implement a robust competency-based assessment (CBA) system in line with national guidelines.</li>
+                <li>To ensure all assessments are based on the prescribed curriculum and occupational standards.</li>
+                <li>To utilize the Portfolio of Evidence (POE) as the primary tool for tracking and certifying trainee competence.</li>
+                <li>To uphold the integrity and credibility of the Institute's assessment and internal verification processes.</li>
+                <li>To provide a fair and equitable environment for all trainees during assessments.</li>
+                <li>To ensure all assessment practices comply with TVETA regulations and CDACC requirements.</li>
+                <li>To promote continuous improvement in assessment practices through regular review and evaluation.</li>
+                <li>To provide clear guidance to all stakeholders on their roles and responsibilities in the assessment process.</li>
             </ul>
         </section>
 
-        <div class="page-break">
-            <h2>1. Executive Summary</h2>
-            <p>This Strategic Plan outlines the roadmap for Mountsview Vocational & Technical Training Institute for the period 2024 to 2028. It is a product of extensive introspection and analysis of the internal and external operating environment. The plan is designed to transform the institute into a centre of excellence in vocational and technical training, renowned for producing competent, ethical, and industry-ready graduates.</p>
-            
-            <p>The plan is anchored on seven (7) strategic pillars:</p>
-            <ol>
-                <li>Academic Excellence & Program Innovation</li>
-                <li>Infrastructure & ICT Development</li>
-                <li>Student Welfare, Placement & Alumni Engagement</li>
-                <li>Strategic Partnerships & Industry Linkages</li>
-                <li>Good Governance & Institutional Capacity Building</li>
-                <li>Financial Sustainability & Resource Mobilization</li>
-                <li>Brand Visibility & Market Positioning</li>
-            </ol>
-            
-            <p>This document serves as a blueprint for management, staff, students, and stakeholders, guiding all institutional activities and investments over the next five years. It is aligned with the Kenya Vision 2030, the TVET Act (2013), and the Sustainable Development Goals (SDGs), particularly SDG 4 on Quality Education and SDG 8 on Decent Work and Economic Growth.</p>
-        </div>
-
-        <div class="page-break">
-            <h2>2. Institutional Background</h2>
-            
-            <h3>2.1 History and Mandate</h3>
-            <p>Mountsview Vocational & Technical Training Institute was established to address the critical skills gap in the Kenyan economy, particularly in the healthcare and technical sectors. Located in Naromoru, Nyeri County, the institute is registered by the Technical and Vocational Education and Training Authority (TVETA) and offers courses examined by TVET CDACC.</p>
-            
-            <p><strong>Core Mandate:</strong> To provide quality, accessible, and affordable vocational training that equips trainees with practical skills, knowledge, and positive attitudes for self-employment, wage employment, and lifelong learning.</p>
-            
-            <h3>2.2 Governance and Management Structure</h3>
-            <p>The institute operates under the guidance of a Board of Directors (BOD) which provides strategic oversight. The day-to-day management is led by the Director, supported by a Principal (Academics), Manager (Administration & Finance), and Manager (Marketing & Linkages). Academic programs are run by Heads of Departments (HODs) for various disciplines.</p>
-        </div>
-
-        <div class="page-break">
-            <h2>3. Situational Analysis</h2>
-            
-            <h3>3.1 SWOT Analysis</h3>
-            <table class="swot-table">
-                <tr>
-                    <th style="width: 50%;">STRENGTHS</th>
-                    <th style="width: 50%;">WEAKNESSES</th>
-                </tr>
-                <tr>
-                    <td>
-                        <ul>
-                            <li>Qualified and TVET-certified trainers</li>
-                            <li>Strong, practical curriculum in high-demand fields</li>
-                            <li>Supportive and experienced Board of Directors</li>
-                            <li>Growing positive reputation in the local community</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li>Inadequate and ageing workshop/lab equipment</li>
-                            <li>Limited physical space for expansion</li>
-                            <li>Under-developed e-learning and ICT infrastructure</li>
-                            <li>Over-reliance on tuition fees as the main source of income</li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <th>OPPORTUNITIES</th>
-                    <th>THREATS</th>
-                </tr>
-                <tr>
-                    <td>
-                        <ul>
-                            <li>High government and donor focus on supporting TVET</li>
-                            <li>Growing demand for skilled healthcare and technical workers</li>
-                            <li>Potential for partnerships with industries, NGOs, and hospitals</li>
-                            <li>Untapped market for short courses and evening programs</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li>Increasing competition from other TVET institutions</li>
-                            <li>Rapidly changing technology requiring constant upgrades</li>
-                            <li>Economic downturns affecting students' ability to pay fees</li>
-                            <li>Stringent regulatory requirements from TVETA</li>
-                        </ul>
-                    </td>
-                </tr>
-            </table>
-            
-            <h3>3.2 PESTLE Analysis</h3>
+        <section id="principles">
+            <h2>3.0 Guiding Principles</h2>
+            <p>All assessment practices at Mountsview will be guided by the following principles:</p>
             <ul>
-                <li><strong>Political:</strong> Supportive government policies under the Bottom-Up Economic Transformation Agenda (BETA) that prioritizes TVET and youth empowerment.</li>
-                <li><strong>Economic:</strong> High youth unemployment creates demand for employable skills; however, low disposable income affects fee payment ability.</li>
-                <li><strong>Social:</strong> A societal shift in perception, recognizing TVET as a viable path to successful careers.</li>
-                <li><strong>Technological:</strong> Digital transformation offers opportunities for blended learning but requires significant investment.</li>
-                <li><strong>Legal:</strong> Must comply with TVET Act 2013, TVET Regulations 2015, OSHA 2007, WIBA 2007, and data protection laws.</li>
-                <li><strong>Environmental:</strong> Need to incorporate green skills and sustainable practices into curricula and operations.</li>
+                <li><strong>Validity:</strong> Assessments will measure what they intend to measure and be aligned with learning outcomes.</li>
+                <li><strong>Reliability:</strong> Assessment processes will be consistent and applied equally to all trainees.</li>
+                <li><strong>Fairness:</strong> Assessments will be free from bias and provide equal opportunity for all trainees to demonstrate competence.</li>
+                <li><strong>Flexibility:</strong> Assessment methods will be adaptable to accommodate different learning styles and needs.</li>
+                <li><strong>Transparency:</strong> Assessment criteria, processes, and outcomes will be clear and accessible to all stakeholders.</li>
+                <li><strong>Authenticity:</strong> Assessments will ensure that evidence produced by trainees is their own work.</li>
             </ul>
-        </div>
+        </section>
 
-        <div class="page-break">
-            <h2>4. Vision, Mission, Core Values & Philosophy</h2>
+        <section id="roles">
+            <h2>4.0 Roles and Responsibilities</h2>
             
+            <h3>4.1 The Principal</h3>
+            <p>Has overall responsibility for the integrity of the assessment process within the Institute. Ensures adequate resources are allocated for effective implementation of assessment policies. The Principal will establish an Assessment Committee to oversee the implementation of this policy and review assessment practices annually.</p>
+            
+            <h3>4.2 The Assessment Coordinator</h3>
+            <p>Liaises with external bodies (e.g., CDACC) on assessment matters, registration, and scheduling. Manages the internal assessment and verification cycle and secures all assessment materials and trainee POEs. Maintains records of all assessment activities and provides regular reports to the Principal on assessment outcomes and compliance matters.</p>
+            
+            <h3>4.3 Trainers and or Verifiers/Assessors</h3>
+            <p>Are TVETA licensed and responsible for conducting formative and summative internal assessments, guiding trainees in building their Portfolio of Evidence (POE), and providing timely feedback. They ensure assessment practices align with competency standards and maintain accurate records of trainee progress. Assessors must participate in regular standardization activities to ensure consistency in assessment decisions.</p>
+            
+            <h3>4.4 Internal Verifiers</h3>
+            <p>Internal Verifiers are responsible for monitoring assessment practices to ensure they meet quality standards. They sample assessment decisions, provide feedback to assessors, and ensure consistency across assessment practices. Internal Verifiers must maintain detailed records of verification activities and report any concerns to the Assessment Coordinator.</p>
+            
+            <h3>4.5 Trainees</h3>
+            <p>Are responsible for actively participating in assessments, diligently maintaining their POE, and adhering to all assessment rules. They must seek clarification when assessment requirements are unclear and submit all required evidence by specified deadlines. Trainees have the right to appeal assessment decisions through the formal appeals process.</p>
+            
+            <div class="note-box">
+                <p><strong>Note:</strong> For external examinations, trainers focus on formative assessment and preparation. For internal assessments, they are responsible for both formative and summative evaluation. All assessors must maintain current TVETA licensing and participate in regular professional development activities related to assessment practices.</p>
+            </div>
+        </section>
+
+        <section id="assessment-types">
+            <h2>5.0 Types of Assessment</h2>
+            <p>The Institute employs a blend of assessment methods to holistically evaluate trainee competence. The selection of assessment methods should be appropriate to the competency being assessed and may include one or more of the following:</p>
+            <div class="assessment-types">
+                <div class="type">
+                    <h3>5.1 Portfolio of Evidence (POE) - Primary Assessment Tool</h3>
+                    <p>A structured collection of evidence compiled by the trainee to demonstrate achievement of all competencies and learning outcomes. The POE provides a comprehensive record of the trainee's journey and achievements throughout their course of study.</p>
+                    <p><strong>Contents include:</strong> Trainee details, assessment plan, direct observation sheets, photos of projects/artefacts, written reports, witness testimonies, and records of oral questioning. All evidence must be authenticated, valid, reliable, current, and sufficient to demonstrate competency.</p>
+                </div>
+                <div class="type">
+                    <h3>5.2 Practical Tests / Projects</h3>
+                    <p>Hands-on, timed assessments where trainees demonstrate specific practical skills under controlled conditions. Used to gather critical evidence for the POE. Practical assessments should be conducted in environments that simulate real workplace conditions as closely as possible.</p>
+                    <p>Practical assessments must be conducted using equipment and materials that meet industry standards. Assessors must provide clear instructions and assessment criteria to trainees before the assessment begins.</p>
+                </div>
+                <div class="type">
+                    <h3>5.3 Theory Tests</h3>
+                    <p>Written or oral tests used to assess the underpinning knowledge and theory related to practical skills. These tests provide supporting knowledge evidence for the POE. Theory tests may include multiple-choice questions, short answer questions, essays, case studies, or oral questioning.</p>
+                    <p>All theory tests must be reviewed by the Internal Verifier before use to ensure they are aligned with learning outcomes and free from cultural or gender bias. Model answers and marking schemes must be prepared for all theory assessments.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="process">
+            <h2>6.0 The Assessment Process</h2>
             <ul>
-                <li><strong>Our Vision:</strong> To be the preferred centre of excellence in vocational and technical training, producing globally competitive and socially responsible artisans and professionals.</li>
-                <li><strong>Our Mission:</strong> To provide innovative, industry-driven, and inclusive skills training through qualified facilitators, modern infrastructure, and strategic partnerships, thereby enhancing employability and entrepreneurship.</li>
-                <li><strong>Our Core Values:</strong> Integrity, Excellence, Innovation, Teamwork, Inclusivity (I.E.I.T.I)</li>
-                <li><strong>Our Philosophy:</strong> "Skill for Empowerment and Sustainable Development."</li>
-            </ul>
-        </div>
-
-        <div class="page-break">
-            <h2>5. Strategic Objectives, Outcomes, and Strategies</h2>
-            
-            <table class="kpi-table">
-                <tr>
-                    <th>Pillar & Strategic Objective</th>
-                    <th>Key Strategies</th>
-                    <th>Key Performance Indicators (KPIs)</th>
-                </tr>
-                <tr>
-                    <td><strong>1. Academic Excellence & Innovation</strong><br>1.1. Enhance the quality and relevance of training programs.</td>
-                    <td>
-                        <ul>
-                            <li>Review and align all curricula with KNQF and industry needs annually</li>
-                            <li>Accredit 3 new high-demand courses by 2025</li>
-                            <li>Ensure 100% of trainers are TVET-pedagogy certified by 2025</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li>% of courses with updated curricula</li>
-                            <li>Number of new accredited courses</li>
-                            <li>Trainer certification rate</li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td>1.2. Improve teaching, learning, and assessment methods.</td>
-                    <td>
-                        <ul>
-                            <li>Establish a Digital Resource Centre</li>
-                            <li>Integrate CBT and project-based learning</li>
-                            <li>Conduct quarterly internal moderation of assessments</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li>Student pass rate (Target: >85%)</li>
-                            <li>Number of trainers using digital tools</li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td><strong>2. Infrastructure & ICT Development</strong><br>2.1. Develop and modernize physical infrastructure.</td>
-                    <td>
-                        <ul>
-                            <li>Construct a new multi-purpose workshop block by 2026</li>
-                            <li>Renovate all theory classrooms and admin offices</li>
-                            <li>Ensure 100% PWD accessibility by 2025</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li>Number of new facilities constructed/renovated</li>
-                            <li>PWD audit compliance score</li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td>2.2. Integrate ICT in all institutional operations.</td>
-                    <td>
-                        <ul>
-                            <li>Implement a Management Information System (MIS)</li>
-                            <li>Establish a computer lab with 40+ computers and internet</li>
-                            <li>Develop and deploy e-learning modules for 5 courses by 2026</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li>% of administrative processes digitized</li>
-                            <li>Student-computer ratio</li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td><strong>3. Student Welfare & Placement</strong><br>3.1. Enhance student support services.</td>
-                    <td>
-                        <ul>
-                            <li>Establish a fully-functional Guidance and Counseling Unit</li>
-                            <li>Introduce a mentorship program pairing students with industry professionals</li>
-                            <li>Launch a scholarship scheme for needy students</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li>Student satisfaction survey scores</li>
-                            <li>Number of students on scholarship</li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td>3.2. Improve graduate outcomes.</td>
-                    <td>
-                        <ul>
-                            <li>Achieve a 80% industrial attachment placement rate</li>
-                            <li>Track graduate employment/self-employment status</li>
-                            <li>Establish an active alumni association</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li>Attachment placement rate</li>
-                            <li>Graduate employment rate (Target: 70% within 1 year)</li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td><strong>4. Partnerships & Linkages</strong><br>4.1. Forge strong strategic partnerships.</td>
-                    <td>
-                        <ul>
-                            <li>Sign MoUs with 10+ companies/hospitals for attachments</li>
-                            <li>Partner with 2 universities for articulation pathways</li>
-                            <li>Collaborate with 3 NGOs for scholarship funding</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li>Number of active MoUs</li>
-                            <li>Number of students benefiting from partnerships</li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td><strong>5. Governance & Institutional Capacity</strong><br>5.1. Strengthen governance and management systems.</td>
-                    <td>
-                        <ul>
-                            <li>Conduct annual board and management retreats</li>
-                            <li>Develop and operationalize all institutional policies (HR, Finance, ICT)</li>
-                            <li>Attain 100% compliance with TVETA standards</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li>Number of policies developed and implemented</li>
-                            <li>TVETA compliance audit rating</li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td>5.2. Enhance human resource capacity.</td>
-                    <td>
-                        <ul>
-                            <li>Conduct annual staff performance appraisals</li>
-                            <li>Sponsor at least 5 staff for higher qualifications annually</li>
-                            <li>Review and competitive remuneration every two years</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li>Staff turnover rate</li>
-                            <li>% of staff with upgraded qualifications</li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td><strong>6. Financial Sustainability</strong><br>6.1. Diversify revenue streams.</td>
-                    <td>
-                        <ul>
-                            <li>Introduce 5+ demand-driven short courses per year</li>
-                            <li>Launch consultancy services in our areas of expertise</li>
-                            <li>Initiate 1 income-generating project (e.g., photocopying, catering)</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li>% of revenue from non-core sources</li>
-                            <li>Profitability of income-generating projects</li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td>6.2. Improve financial management and resource mobilization.</td>
-                    <td>
-                        <ul>
-                            <li>Prepare and adhere to annual budgets</li>
-                            <li>Develop a compelling resource mobilization proposal for donors</li>
-                            <li>Implement strict financial controls and audits</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li>Audit opinion (Unqualified/clean)</li>
-                            <li>Value of grants/donations secured</li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td><strong>7. Brand Visibility & Marketing</strong><br>7.1. Enhance the institutional brand and market position.</td>
-                    <td>
-                        <ul>
-                            <li>Develop a new marketing strategy and brand guidelines</li>
-                            <li>Maintain an active website and social media presence</li>
-                            <li>Participate in 2+ career fairs/education exhibitions annually</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li>Website traffic and social media engagement</li>
-                            <li>Year-on-year enrolment growth rate (Target: 15%)</li>
-                        </ul>
-                    </td>
-                </tr>
-            </table>
-        </div>
-
-        <div class="page-break">
-            <h2>6. Implementation Framework</h2>
-            
-            <p>The implementation of this plan will be phased over the five years. <strong>Year 1 (2024)</strong> will focus on foundational activities like policy development, detailed planning, and initial resource mobilization. <strong>Years 2-3 (2025-2026)</strong> will be the core implementation phase for most infrastructure and program activities. <strong>Years 4-5 (2027-2028)</strong> will focus on consolidation, scaling up successful initiatives, and preparing for the next strategic cycle.</p>
-            
-            <p>A detailed <strong>Annual Work Plan (AWP)</strong> will be derived from this strategic plan at the beginning of each financial year, specifying activities, budgets, timelines, and responsible officers.</p>
-            
-            <h3>Implementation Timeline</h3>
-            <table>
-                <tr>
-                    <th>Strategic Objective</th>
-                    <th>2024</th>
-                    <th>2025</th>
-                    <th>2026</th>
-                    <th>2027</th>
-                    <th>2028</th>
-                </tr>
-                <tr>
-                    <td>Curriculum Review & Alignment</td>
-                    <td>Planning</td>
-                    <td>Implementation</td>
-                    <td>Implementation</td>
-                    <td>Evaluation</td>
-                    <td>Consolidation</td>
-                </tr>
-                <tr>
-                    <td>Trainer Certification</td>
-                    <td>Needs Assessment</td>
-                    <td>Training</td>
-                    <td>Training</td>
-                    <td>Certification</td>
-                    <td>Maintenance</td>
-                </tr>
-                <tr>
-                    <td>Infrastructure Development</td>
-                    <td>Planning</td>
-                    <td>Construction</td>
-                    <td>Construction</td>
-                    <td>Utilization</td>
-                    <td>Maintenance</td>
-                </tr>
-                <tr>
-                    <td>ICT Integration</td>
-                    <td>Needs Assessment</td>
-                    <td>Procurement</td>
-                    <td>Implementation</td>
-                    <td>Utilization</td>
-                    <td>Upgrading</td>
-                </tr>
-                <tr>
-                    <td>Partnership Development</td>
-                    <td>Identification</td>
-                    <td>Negotiation</td>
-                    <td>Formalization</td>
-                    <td>Implementation</td>
-                    <td>Expansion</td>
-                </tr>
-            </table>
-        </div>
-
-        <div class="page-break">
-            <h2>7. Monitoring, Evaluation and Learning (MEL) Framework</h2>
-            
-            <p>The MEL framework will ensure systematic tracking of progress, measurement of results, and learning from implementation experiences.</p>
-            
-            <h3>7.1 Monitoring</h3>
-            <p>Continuous tracking of performance through:</p>
-            <ul>
-                <li>Quarterly progress reports reviewed by the management committee</li>
-                <li>Annual performance assessments</li>
-                <li>Regular field visits and spot checks</li>
-                <li>Stakeholder feedback mechanisms</li>
+                <li><strong>Formative Assessment (Continuous):</strong> Ongoing assessment throughout the training period. Trainers provide continuous feedback, guide POE development, and sign off on competencies as they are achieved. Formative assessment is primarily for learning development and identifying areas where additional support may be required.</li>
+                <li><strong>Summative Assessment (Final):</strong> The final evaluation of the trainee's POE and any final practical/theory tests to make an overall judgement of competence for a unit/module. Summative assessment determines whether the trainee has met the required standards for certification.</li>
+                <li><strong>Internal Verification:</strong> A mandatory quality assurance step where a senior staff member samples assessed POEs to ensure assessors' decisions are consistent, fair, and accurate. Internal verification must cover at least 20% of assessments for each unit/module.</li>
+                <li><strong>External Verification:</strong> External verifiers from relevant bodies (e.g., CDACC) visit the institution to verify the entire internal assessment and verification process. The Institute will fully cooperate with external verifiers and implement any recommendations for improvement.</li>
             </ul>
             
-            <h3>7.2 Evaluation</h3>
-            <p>Periodic assessments to measure effectiveness and impact:</p>
+            <h3>6.1 Assessment Planning</h3>
+            <p>At the beginning of each course, trainees must receive an assessment plan that outlines:</p>
             <ul>
-                <li><strong>Mid-term review</strong> will be conducted in <strong>2026</strong> to assess progress and make necessary adjustments</li>
-                <li><strong>Final evaluation</strong> will be conducted in <strong>2028</strong> to measure overall impact and inform the next plan</li>
-                <li>External evaluations may be commissioned for objective assessment</li>
+                <li>The units/modules to be assessed</li>
+                <li>The methods of assessment to be used</li>
+                <li>The timing of assessments</li>
+                <li>The criteria for successful completion</li>
+                <li>The appeals process</li>
             </ul>
             
-            <h3>7.3 Learning</h3>
-            <p>Documentation and utilization of lessons learned:</p>
-            <ul>
-                <li>Establishment of a knowledge management system</li>
-                <li>Regular learning and reflection sessions</li>
-                <li>Sharing of best practices and success stories</li>
-                <li>Adaptation of strategies based on lessons learned</li>
-            </ul>
-            
-            <h3>7.4 Responsibility</h3>
-            <p>The <strong>Principal</strong> will be the overall champion for MEL, supported by the HODs and a designated MEL focal person.</p>
-        </div>
+            <h3>6.2 Feedback and Results</h3>
+            <p>Trainees will receive feedback on their assessment performance within 10 working days of the assessment taking place. Feedback should be constructive, specific, and focused on how performance can be improved. Final results will be released after internal verification has been completed and any necessary moderation has taken place.</p>
+        </section>
 
-        <div class="page-break">
-            <h2>8. Risk Management Plan</h2>
-            
-            <p>Proactive risk management will be essential for the successful implementation of this strategic plan. The following table identifies potential risks and mitigation strategies:</p>
-            
-            <table class="risk-table">
-                <tr>
-                    <th>Identified Risk</th>
-                    <th>Likelihood</th>
-                    <th>Impact</th>
-                    <th>Mitigation Strategy</th>
-                </tr>
-                <tr>
-                    <td>Drop in Student Enrollment</td>
-                    <td>Medium</td>
-                    <td>High</td>
-                    <td>Aggressive marketing, flexible fee payment plans, introduce high-demand courses.</td>
-                </tr>
-                <tr>
-                    <td>Non-Compliance with TVETA</td>
-                    <td>Low</td>
-                    <td>Very High</td>
-                    <td>Assign a compliance officer, conduct internal audits, subscribe to TVETA updates.</td>
-                </tr>
-                <tr>
-                    <td>Key Staff Turnover</td>
-                    <td>Medium</td>
-                    <td>High</td>
-                    <td>Competitive packages, succession planning, cross-training of staff.</td>
-                </tr>
-                <tr>
-                    <td>Insufficient Funding</td>
-                    <td>High</td>
-                    <td>High</td>
-                    <td>Diversify income streams, strict budgetary control, phased implementation of projects.</td>
-                </tr>
-                <tr>
-                    <td>Damage to Facilities/Theft</td>
-                    <td>Medium</td>
-                    <td>Medium</td>
-                    <td>Comprehensive insurance cover, enhance security systems, disaster management plan.</td>
-                </tr>
-                <tr>
-                    <td>Changes in Government Policy</td>
-                    <td>Medium</td>
-                    <td>High</td>
-                    <td>Regular policy monitoring, maintain good relationships with regulatory bodies, flexibility in planning.</td>
-                </tr>
-                <tr>
-                    <td>Technological Obsolescence</td>
-                    <td>High</td>
-                    <td>Medium</td>
-                    <td>Regular technology audits, phased technology upgrades, investment in future-proof technologies.</td>
-                </tr>
-                <tr>
-                    <td>Negative Publicity</td>
-                    <td>Low</td>
-                    <td>High</td>
-                    <td>Proactive PR strategy, transparent communication, quick response to issues.</td>
-                </tr>
-            </table>
-            
-            <h3>Risk Management Process</h3>
-            <ol>
-                <li><strong>Risk Identification:</strong> Regular risk assessment exercises involving staff and stakeholders</li>
-                <li><strong>Risk Analysis:</strong> Evaluation of likelihood and impact of identified risks</li>
-                <li><strong>Risk Treatment:</strong> Implementation of appropriate mitigation strategies</li>
-                <li><strong>Risk Monitoring:</strong> Continuous tracking of risks and effectiveness of mitigation measures</li>
-                <li><strong>Risk Reporting:</strong> Regular reporting to management and Board of Directors</li>
-            </ol>
-        </div>
+        <section id="appeals">
+            <h2>7.0 Appeals Process</h2>
+            <p>Trainees who wish to appeal an assessment decision must submit a formal appeal in writing to the Assessment Coordinator within 10 working days of receiving their results. The appeal must clearly state the grounds for appeal and provide supporting evidence where appropriate.</p>
+            <p>Appeals will be considered by an Appeals Committee consisting of the Principal (or nominee), the Assessment Coordinator, and a trainer who was not involved in the original assessment. The Committee will review the assessment decision and all relevant evidence before making a determination. Trainees will be informed of the outcome of their appeal within 15 working days of its submission.</p>
+        </section>
 
-        <div class="page-break">
-            <h2>9. Resource Mobilization and Financial Sustainability Plan</h2>
-            
-            <p>The estimated budget for implementing this strategic plan is KES [To be determined based on AWPs]. Resources will be mobilized from multiple sources to ensure financial sustainability.</p>
-            
-            <h3>9.1 Sources of Funding</h3>
-            <ul>
-                <li><strong>Internally Generated Funds:</strong> Tuition fees from main and short courses, income from consultancy and income-generating projects (IGPs).</li>
-                <li><strong>External Funding:</strong> Grants from government agencies (e.g., Uwezo Fund, TVET Fund), development partners, and corporate social investment (CSI) programs.</li>
-                <li><strong>Partnerships:</strong> In-kind support from industry partners (equipment, guest lecturers).</li>
-            </ul>
-            
-            <h3>9.2 Financial Management</h3>
-            <p>To ensure prudent financial management, the institute will:</p>
-            <ul>
-                <li>Prepare and adhere to realistic annual budgets</li>
-                <li>Implement robust financial controls and auditing systems</li>
-                <li>Diversify revenue streams to reduce dependence on tuition fees</li>
-                <li>Maintain adequate financial reserves for sustainability</li>
-                <li>Ensure transparency and accountability in all financial transactions</li>
-            </ul>
-            
-            <h3>9.3 Resource Mobilization Strategy</h3>
-            <p>A detailed fundraising strategy will be developed, including:</p>
-            <ul>
-                <li>Identification of potential funding sources</li>
-                <li>Development of compelling funding proposals</li>
-                <li>Cultivation of relationships with donors and partners</li>
-                <li>Regular reporting to funders on utilization of resources</li>
-            </ul>
-            
-            <h3>9.4 Income Generation Projects</h3>
-            <p>The institute will establish the following income-generating projects:</p>
-            <ul>
-                <li>Short courses and weekend programs for working professionals</li>
-                <li>Consultancy services in areas of institutional expertise</li>
-                <li>Production units where students can practice skills while generating income</li>
-                <li>Rental of institutional facilities during off-hours</li>
-            </ul>
-        </div>
+        <section id="review">
+            <h2>8.0 Policy Review</h2>
+            <p>This policy will be reviewed annually by the Assessment Committee to ensure it remains current, effective, and aligned with regulatory requirements. The review process will include consultation with stakeholders including trainers, assessors, and trainee representatives. Recommendations for changes to the policy will be presented to the Principal for approval.</p>
+        </section>
 
-        <div class="page-break">
-            <h2>10. Conclusion & Signatures</h2>
-            
-            <p>This Strategic Plan 2024–2028 provides a clear and ambitious yet realistic path for Mountsview Vocational & Technical Training Institute. Its successful implementation requires the unwavering commitment of the Board, Management, Staff, Students, and Partners. We collectively commit to realizing this vision and transforming lives through skills development.</p>
-            
-            <p>The institute leadership pledges to provide the necessary resources, guidance, and support to ensure the achievement of the objectives outlined in this plan. We will regularly monitor progress, make adjustments as needed, and communicate transparently with all stakeholders.</p>
-            
-            <p>This plan is a living document that will guide our institution toward excellence, innovation, and sustainable growth in vocational and technical training.</p>
-            
-            <div class="signature-block">
-                <p><strong>Approved by:</strong></p>
-                
-                <div class="signature-line"></div>
-                <p>Chairperson, Board of Directors</p>
-                <p>Date: _______________</p>
-                
-                <div style="margin-top: 40px;"></div>
-                
-                <div class="signature-line"></div>
-                <p>Director, Mountsview Vocational & Technical Training Institute</p>
-                <p>Date: _______________</p>
+        <div class="approval-section">
+            <p><strong>Approved by:</strong></p>
+            <div class="signature-area">
+                <div class="manager-name">Bii Chepkirui</div>
+                <div class="signature-space">Sign: _________________________</div>
+                <div>Manager - Administration</div>
+                <div>Mountsview Vocational and Technical Training Institute</div>
+                <div class="date-field">Date: ____________</div>
             </div>
         </div>
+
+        <div class="footer">
+            <p>Mountsview Vocational and Technical Training Institute | Quality Education for Professional Excellence</p>
+            <p>© 2025 Mountsview. All rights reserved.</p>
+        </div>
+
     </div>
+
 </body>
 </html>
